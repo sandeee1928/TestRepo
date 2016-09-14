@@ -18,7 +18,7 @@ class ViewController: UIViewController, WKNavigationDelegate {
         view.addSubview(webView)
         webView.translatesAutoresizingMaskIntoConstraints = false
         
-        webView.loadRequest(NSURLRequest(URL: NSURL(string: "www.google.com")!))
+        webView.load(URLRequest(url: URL(string: "www.google.com")!))
         
         // Do any additional setup after loading the view, typically from a nib.
     }
